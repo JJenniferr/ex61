@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>抗议一线感人故事</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+
+      .box{
+		width:600px;
+      	height:350px;
+      	background-color:#9fdaff;
+      	border-radius:10px;
+      }
+      .box img{
+		width:600px;
+      	height:350px;
+      	border-radius:10px;
+      }      
+	 p{
+	  	text-align: center;
+	  	margin-top:50px;
+      }
+      #main{
+      	width:600px;
+      	margin:auto;
+      }    
+    </style>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+    	  $("input").each(function(i){
+    		  $(this).click(function(){
+    			  $("#showImage").fadeOut(500,function(){
+    				  $("#showImage").attr("src","res/0"+i+".jpg");
+    				  $("#showImage").fadeIn(500);
+    			  });
+    		  });
+    	  });
+      })
+    </script>
+  </head>
+  <body>
+    <div id="main">
+    <p>
+	    <input type="button" value="抗" />
+	    <input type="button" value="疫" />
+	    <input type="button" value="有" />
+	    <input type="button" value="我" />
+    </p>
+    <div class="box">
+      <img id="showImage" src="res/00.jpg" />
+    </div>
+     <p><a href="index11.html">返回目录</a></p>
+   </div>
+  </body>
+</html>
+
